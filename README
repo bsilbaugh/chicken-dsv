@@ -1,4 +1,5 @@
 
                                   - DSV -
 
-Utilities for reading and writing Delimiter Separated Values (DSV).
+Chicken Scheme utilities for reading and writing Delimiter Separated Values
+(DSV).
