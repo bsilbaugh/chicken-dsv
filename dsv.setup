@@ -1,0 +1,11 @@
+;;;
+;;; Egg Setup Script
+;;;
+
+(compile -s -O2 -d1 dsv.scm -J)
+(compile -s dsv.import.scm -O2 -dO)
+
+(install-extension
+ 'dsv
+ '("dsv.so" "dsv.import.so")
+ '((version 0.1.0)))

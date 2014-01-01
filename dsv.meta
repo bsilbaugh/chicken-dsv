@@ -1,0 +1,10 @@
+;;;
+;;; Meta File Script
+;;;
+
+(; --- egg meta data ---
+(license "BSD") ; released under BSD license
+(category db)   ; fits into databases category
+;(needs ...)    ; list of egg dependencies
+(author "Benjamin Silbaugh")
+(synopsis "Utilities for writing and reading DSV data sets"))

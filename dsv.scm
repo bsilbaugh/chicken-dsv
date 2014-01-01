@@ -1,11 +1,17 @@
 ;;;
-;;; DSV Utilities
+;;; Utilities for writing and reading DSV data sets
 ;;;
+;;; Copyright 2013 Benjamin Silbaugh
+;;;
+;;; Permission is granted to redistribute and/or modify subject to the
+;;; terms described in the file LICENSE.
+;;;
+
 
 (module dsv (dsv-record
 			 dsv-columns
 			 dsv-rows)
-  (import scheme)
+  (import scheme chicken)
 
 ;; Returns a dsv record display function
 (define (dsv-record delim values)
