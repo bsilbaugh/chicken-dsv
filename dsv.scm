@@ -10,8 +10,12 @@
 
 (module dsv (dsv-record
 			 dsv-columns
-			 dsv-rows)
+			 dsv-rows
+			 dsv-record-parser
+			 dsv-parser)
   (import scheme chicken)
+  (use data-structures)
+  (use extras)
 
 ;; Returns a dsv record display function
 (define (dsv-record delim values)
