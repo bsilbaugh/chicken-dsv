@@ -68,6 +68,6 @@
 		  (read-records (cons (parse line) records) parse port))))
   (let ((parse (dsv-record-parser delim)))
 	(lambda (p)
-	  (read-records '() parse p))))
+	  (reverse (read-records '() parse p)))))
 
 ); module
