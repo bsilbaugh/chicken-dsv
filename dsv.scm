@@ -63,7 +63,7 @@
 (define (dsv-parser delim)
   (define (read-records records parse port)
 	(let ((line (read-line port)))
-	  (if (eq? 'eof line)
+	  (if (eq? #!eof line)
 		  records
 		  (read-records (cons (parse line) records) parse port))))
   (let ((parse (dsv-record-parser delim)))
